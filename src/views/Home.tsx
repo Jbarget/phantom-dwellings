@@ -1,8 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-import ReactMapboxGl from "react-mapbox-gl";
+import mapbox from "mapbox-gl";
 
 import { H1, spacingStyles } from "../components/Typography";
+import { Story } from "../types/story.types";
+import StoryTeller from "../components/StoryTeller";
 
 const Header = styled.header`
   ${spacingStyles}
@@ -15,10 +17,13 @@ const Main = styled.main`
   align-items: center;
 `;
 
-const Map = ReactMapboxGl({
-  accessToken:
-    "pk.eyJ1IjoiamJhcmdldCIsImEiOiJjaWhjZDE0ZW8wMmJjdGNsejl0M2JiZnZvIn0.RpRDGObfdNuHY3LwNUZjug",
-});
+mapbox.accessToken = process.env.REACT_APP_MAPBOX_ACCESS_TOKEN as string;
+
+const storyOne: Story = [
+  { center: [132.222, -27.9], zoom: 3 },
+  { center: [146.1399148, -17.9477107], zoom: 10 },
+  { center: [146.3585152, -17.7195261], zoom: 12 },
+];
 
 const Home = () => {
   return (
@@ -29,15 +34,7 @@ const Home = () => {
         </H1>
       </Header>
       <Main pt={10}>
-        <Map
-          style="mapbox://styles/jbarget/ckbietym61evp1is6v1wk19rw"
-          center={[137.790811, -29.044414]}
-          zoom={[3]}
-          containerStyle={{
-            height: "70vh",
-            width: "50vw",
-          }}
-        ></Map>
+        <StoryTeller story={storyOne} />
       </Main>
     </div>
   );
