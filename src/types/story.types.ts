@@ -1,6 +1,10 @@
-export interface StoryStep {
+export interface Chapter {
   center: [number, number];
   zoom: number;
 }
 
-export type Story = StoryStep[];
+export interface Story {
+  triggerTimes: number[];
+  audio: string;
+  chapters: Chapter[];
+}

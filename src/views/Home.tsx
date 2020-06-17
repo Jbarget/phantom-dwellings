@@ -15,15 +15,21 @@ const Main = styled.main`
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 `;
 
 mapbox.accessToken = process.env.REACT_APP_MAPBOX_ACCESS_TOKEN as string;
 
-const storyOne: Story = [
-  { center: [132.222, -27.9], zoom: 3 },
-  { center: [146.1399148, -17.9477107], zoom: 10 },
-  { center: [146.3585152, -17.7195261], zoom: 12 },
-];
+const storyOne: Story = {
+  triggerTimes: [2, 5, 9],
+  audio: "story-one.mp3",
+  chapters: [
+    { center: [132.222, -27.9], zoom: 3 },
+    { center: [146.1399148, -17.9477107], zoom: 10 },
+    { center: [146.3585152, -17.7195261], zoom: 12 },
+    { center: [125.3585152, -17.7195261], zoom: 7 },
+  ],
+};
 
 const Home = () => {
   return (
