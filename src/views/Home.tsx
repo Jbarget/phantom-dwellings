@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import mapbox from "mapbox-gl";
 
 import { H1, spacingStyles } from "../components/Typography";
 import { Story } from "../types/story.types";
@@ -18,16 +17,23 @@ const Main = styled.main`
   flex-direction: column;
 `;
 
-mapbox.accessToken = process.env.REACT_APP_MAPBOX_ACCESS_TOKEN as string;
-
 const storyOne: Story = {
   triggerTimes: [2, 5, 9],
   audio: "story-one.mp3",
   chapters: [
-    { center: [132.222, -27.9], zoom: 3 },
-    { center: [146.1399148, -17.9477107], zoom: 10 },
-    { center: [146.3585152, -17.7195261], zoom: 12 },
-    { center: [125.3585152, -17.7195261], zoom: 7 },
+    {
+      mapProps: { center: [132.222, -27.9], zoom: 3 },
+      markers: [],
+    },
+    {
+      mapProps: { center: [146.1399148, -17.9477107], zoom: 3 },
+      markers: [{ center: [146.3585152, -17.7195261], title: "Something" }],
+    },
+    {
+      mapProps: { center: [146.3585152, -17.91195261], zoom: 3 },
+      markers: [{ center: [140.3585152, -17.7195261], title: "Elison Reef" }],
+    },
+    { mapProps: { center: [125.3585152, -17.7195261], zoom: 7 }, markers: [] },
   ],
 };
 

@@ -21,7 +21,7 @@ const StoryTeller = ({ story }: StoryTellerProps) => {
 
   return (
     <Fragment>
-      <Map currentStep={story.chapters[currentStep]} />
+      <Map chapter={story.chapters[currentStep]} />
       <audio ref={audioRef} controls onTimeUpdate={onTimeUpdate}>
         <source
           src={`${process.env.PUBLIC_URL}/story-one.mp3`}
