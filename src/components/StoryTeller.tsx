@@ -1,13 +1,23 @@
 import React, { useCallback, useState, useRef, Fragment } from "react";
-import { Story } from "../types/story.types";
+import styled from "styled-components";
 
 import Map from "./Map";
+import ChapterDetails from "./ChapterDetails";
+import { Story } from "../types/story.types";
 
 interface StoryTellerProps {
   story: Story;
 }
 
-const StoryTeller = ({ story }: StoryTellerProps) => {
+const Flex = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+`;
+
+const StoryTeller: React.FC<StoryTellerProps> = ({ story }) => {
   const [currentStep, setCurrentStep] = useState(0);
   const audioRef = useRef(null);
 
@@ -21,7 +31,10 @@ const StoryTeller = ({ story }: StoryTellerProps) => {
 
   return (
     <Fragment>
-      <Map chapter={story.chapters[currentStep]} />
+      <Flex>
+        <Map chapter={story.chapters[currentStep]} />
+        <ChapterDetails chapter={story.chapters[currentStep]} />
+      </Flex>
       <audio ref={audioRef} controls onTimeUpdate={onTimeUpdate}>
         <source
           src={`${process.env.PUBLIC_URL}/story-one.mp3`}

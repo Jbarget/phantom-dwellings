@@ -24,16 +24,31 @@ const storyOne: Story = {
     {
       mapProps: { center: [132.222, -27.9], zoom: 3 },
       markers: [],
+      data: {
+        images: [],
+      },
     },
     {
       mapProps: { center: [146.1399148, -17.9477107], zoom: 3 },
       markers: [{ center: [146.3585152, -17.7195261], title: "Something" }],
+      data: {
+        images: [],
+      },
     },
     {
       mapProps: { center: [146.3585152, -17.91195261], zoom: 3 },
       markers: [{ center: [140.3585152, -17.7195261], title: "Elison Reef" }],
+      data: {
+        images: [],
+      },
     },
-    { mapProps: { center: [125.3585152, -17.7195261], zoom: 7 }, markers: [] },
+    {
+      mapProps: { center: [125.3585152, -17.7195261], zoom: 7 },
+      markers: [],
+      data: {
+        images: [],
+      },
+    },
   ],
 };
 

@@ -13,6 +13,9 @@ export interface Marker {
 export interface Chapter {
   mapProps: MapProps;
   markers: Marker[];
+  data: {
+    images: string[];
+  };
 }
 
 export interface Story {

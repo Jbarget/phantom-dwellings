@@ -6,7 +6,7 @@ import styled from "styled-components";
 import { Marker, Chapter } from "../types/story.types";
 
 const MapContainer = styled.div`
-  width: 50%;
+  width: 45%;
   height: 70vh;
   margin-bottom: 20px;
 `;
