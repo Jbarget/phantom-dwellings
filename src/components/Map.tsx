@@ -61,8 +61,6 @@ const Map = (props: MapProps) => {
     const { mapProps, markers } = props.chapter;
     if (map) {
       if (mapProps) {
-        console.log(mapProps);
-
         map.flyTo({ speed: 0.8, ...mapProps });
       }
       if (markers) {

@@ -32,7 +32,9 @@ const Img = styled.img``;
 
 const Image = ({ src, alt, width }: IImage) => {
   const defaultWidth = "200px";
-  return <Img src={`/images/${src}`} alt={alt} width={width || defaultWidth} />;
+  return (
+    <Img src={`./images/${src}`} alt={alt} width={width || defaultWidth} />
+  );
 };
 
 const ChapterDetails: React.FC<ChapterDetailsProps> = ({ details }) => {

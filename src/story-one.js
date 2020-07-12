@@ -139,7 +139,7 @@ export default {
             src: "14.jpg",
             alt:
               "map of the mining locations in Queensland between 1863 to 1922",
-            width: "400px",
+            width: "350px",
           },
         ],
         text: "",
@@ -169,7 +169,7 @@ export default {
           },
         ],
         text:
-          "No theory on the formation of coral-reefs can be considered satisfactory which does not include the three classes. We have seen that we are driven to believe in the subsidence of these vast areas, interspersed with low islands, of which not one rises above the height to which the wind and waves can throw up matter, and yet are constructed by animals requiring a foundation, and that foundation to lie at no great depth. Let us then take an island surrounded by fringing-reefs, which offer no difficulty in their structure; and let this island with its reef, represented by the unbroken lines in the woodcut, slowly subside... NOT FINISHED",
+          "No theory on the formation of coral-reefs can be considered satisfactory which does not include the three classes. We have seen that we are driven to believe in the subsidence of these vast areas, interspersed with low islands, of which not one rises above the height to which the wind and waves can throw up matter, and yet are constructed by animals requiring a foundation, and that foundation to lie at no great depth. Let us then take an island surrounded by fringing-reefs, which offer no difficulty in their structure; and let this island with its reef, represented by the unbroken lines in the woodcut, slowly subside.",
       },
     },
     {
@@ -227,17 +227,17 @@ export default {
       details: {
         images: [
           {
-            src: "20.jpg",
+            src: "20.png",
             alt:
               "front cover of Queensland Conservation Council journal in May/June 1979",
           },
           {
-            src: "21.jpg",
+            src: "21.png",
             alt:
               "a newsletter from the Australian Environment Council in November 1983",
           },
           {
-            src: "22.jpg",
+            src: "22.png",
             alt:
               "front cover of the Australian Littoral Society bulletin in April 1984",
           },
