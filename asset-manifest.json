@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/phantom-dwellings/static/css/main.a9ac5b2e.chunk.css",
+    "main.js": "/phantom-dwellings/static/js/main.96e9bdc9.chunk.js",
+    "main.js.map": "/phantom-dwellings/static/js/main.96e9bdc9.chunk.js.map",
+    "runtime-main.js": "/phantom-dwellings/static/js/runtime-main.f643d45f.js",
+    "runtime-main.js.map": "/phantom-dwellings/static/js/runtime-main.f643d45f.js.map",
+    "static/css/2.b4a16772.chunk.css": "/phantom-dwellings/static/css/2.b4a16772.chunk.css",
+    "static/js/2.1b8a4383.chunk.js": "/phantom-dwellings/static/js/2.1b8a4383.chunk.js",
+    "static/js/2.1b8a4383.chunk.js.map": "/phantom-dwellings/static/js/2.1b8a4383.chunk.js.map",
+    "index.html": "/phantom-dwellings/index.html",
+    "precache-manifest.c759a7d0affb3fdb02e8f70f57b0c5c1.js": "/phantom-dwellings/precache-manifest.c759a7d0affb3fdb02e8f70f57b0c5c1.js",
+    "service-worker.js": "/phantom-dwellings/service-worker.js",
+    "static/css/2.b4a16772.chunk.css.map": "/phantom-dwellings/static/css/2.b4a16772.chunk.css.map",
+    "static/css/main.a9ac5b2e.chunk.css.map": "/phantom-dwellings/static/css/main.a9ac5b2e.chunk.css.map",
+    "static/js/2.1b8a4383.chunk.js.LICENSE.txt": "/phantom-dwellings/static/js/2.1b8a4383.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f643d45f.js",
+    "static/css/2.b4a16772.chunk.css",
+    "static/js/2.1b8a4383.chunk.js",
+    "static/css/main.a9ac5b2e.chunk.css",
+    "static/js/main.96e9bdc9.chunk.js"
+  ]
+}
