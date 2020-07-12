@@ -7,8 +7,8 @@ import { Marker, Chapter } from "../types/story.types";
 
 const MapContainer = styled.div`
   width: 45%;
-  height: 70vh;
-  margin-bottom: 20px;
+  height: 500px;
+  margin-right: 12px;
 `;
 
 const Pin = styled.div`
@@ -27,9 +27,7 @@ const Map = (props: MapProps) => {
   const addMarker = useCallback(
     (marker: Marker) => {
       if (map) {
-        const popup = new mapboxgl.Popup({ offset: 25 }).setText(
-          "Construction on the Washington Monument began in 1848."
-        );
+        const popup = new mapboxgl.Popup({ offset: 25 }).setText(marker.title);
         // @ts-ignore
         new mapboxgl.Marker(Pin)
           .setLngLat(marker.center)
@@ -60,11 +58,24 @@ const Map = (props: MapProps) => {
   }, [map]);
 
   useEffect(() => {
+    const { mapProps, markers } = props.chapter;
     if (map) {
-      map.flyTo({ speed: 0.5, ...props.chapter.mapProps });
-      props.chapter.markers.map(addMarker);
+      if (mapProps) {
+        console.log(mapProps);
+
+        map.flyTo({ speed: 0.8, ...mapProps });
+      }
+      if (markers) {
+        markers.map(addMarker);
+      }
     }
-  }, [map, props.chapter.mapProps, props.chapter.markers, addMarker]);
+  }, [
+    map,
+    props.chapter,
+    props.chapter.mapProps,
+    props.chapter.markers,
+    addMarker,
+  ]);
 
   return <MapContainer ref={mapContainer} />;
 };

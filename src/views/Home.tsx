@@ -4,6 +4,7 @@ import styled from "styled-components";
 import { H1, spacingStyles } from "../components/Typography";
 import { Story } from "../types/story.types";
 import StoryTeller from "../components/StoryTeller";
+import storyOne from "../story-one";
 
 const Header = styled.header`
   ${spacingStyles}
@@ -17,51 +18,16 @@ const Main = styled.main`
   flex-direction: column;
 `;
 
-const storyOne: Story = {
-  triggerTimes: [2, 5, 9],
-  audio: "story-one.mp3",
-  chapters: [
-    {
-      mapProps: { center: [132.222, -27.9], zoom: 3 },
-      markers: [],
-      data: {
-        images: [],
-      },
-    },
-    {
-      mapProps: { center: [146.1399148, -17.9477107], zoom: 3 },
-      markers: [{ center: [146.3585152, -17.7195261], title: "Something" }],
-      data: {
-        images: [],
-      },
-    },
-    {
-      mapProps: { center: [146.3585152, -17.91195261], zoom: 3 },
-      markers: [{ center: [140.3585152, -17.7195261], title: "Elison Reef" }],
-      data: {
-        images: [],
-      },
-    },
-    {
-      mapProps: { center: [125.3585152, -17.7195261], zoom: 7 },
-      markers: [],
-      data: {
-        images: [],
-      },
-    },
-  ],
-};
-
 const Home = () => {
   return (
     <div>
-      <Header pv={5}>
+      <Header pt={7} pb={5}>
         <H1 fontSize={5} ta="center">
           Phantom Dwellings
         </H1>
       </Header>
-      <Main pt={10}>
-        <StoryTeller story={storyOne} />
+      <Main pt={5}>
+        <StoryTeller story={storyOne as Story} />
       </Main>
     </div>
   );

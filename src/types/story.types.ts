@@ -1,6 +1,7 @@
 interface MapProps {
   center: [number, number];
   zoom: number;
+  speed?: number;
 }
 
 export interface Marker {
@@ -10,12 +11,21 @@ export interface Marker {
   image?: string;
 }
 
+export interface Image {
+  src: string;
+  alt: string;
+  width?: string;
+}
+
+export interface ChapterDetails {
+  images: Image[];
+  text: string;
+}
+
 export interface Chapter {
-  mapProps: MapProps;
+  mapProps?: MapProps;
   markers: Marker[];
-  data: {
-    images: string[];
-  };
+  details: ChapterDetails;
 }
 
 export interface Story {

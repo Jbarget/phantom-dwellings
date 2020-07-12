@@ -15,7 +15,16 @@ const Flex = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  margin-bottom: 20px;
 `;
+
+const defaultChapter = {
+  mapProps: {},
+  markers: [],
+  data: {
+    images: [],
+  },
+};
 
 const StoryTeller: React.FC<StoryTellerProps> = ({ story }) => {
   const [currentStep, setCurrentStep] = useState(0);
@@ -28,12 +37,13 @@ const StoryTeller: React.FC<StoryTellerProps> = ({ story }) => {
       setCurrentStep(currentStep + 1);
     }
   }, [story.triggerTimes, currentStep, setCurrentStep]);
+  const currentChapter = story.chapters[currentStep] || defaultChapter;
 
   return (
     <Fragment>
       <Flex>
-        <Map chapter={story.chapters[currentStep]} />
-        <ChapterDetails chapter={story.chapters[currentStep]} />
+        <Map chapter={currentChapter} />
+        <ChapterDetails details={currentChapter.details} />
       </Flex>
       <audio ref={audioRef} controls onTimeUpdate={onTimeUpdate}>
         <source
