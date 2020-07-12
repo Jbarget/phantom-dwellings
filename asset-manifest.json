@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/phantom-dwellings/static/css/main.a9ac5b2e.chunk.css",
-    "main.js": "/phantom-dwellings/static/js/main.4362635e.chunk.js",
-    "main.js.map": "/phantom-dwellings/static/js/main.4362635e.chunk.js.map",
+    "main.js": "/phantom-dwellings/static/js/main.f2b50622.chunk.js",
+    "main.js.map": "/phantom-dwellings/static/js/main.f2b50622.chunk.js.map",
     "runtime-main.js": "/phantom-dwellings/static/js/runtime-main.f643d45f.js",
     "runtime-main.js.map": "/phantom-dwellings/static/js/runtime-main.f643d45f.js.map",
     "static/css/2.b4a16772.chunk.css": "/phantom-dwellings/static/css/2.b4a16772.chunk.css",
     "static/js/2.1b8a4383.chunk.js": "/phantom-dwellings/static/js/2.1b8a4383.chunk.js",
     "static/js/2.1b8a4383.chunk.js.map": "/phantom-dwellings/static/js/2.1b8a4383.chunk.js.map",
     "index.html": "/phantom-dwellings/index.html",
-    "precache-manifest.fab0745448d7e87b6fb2a5236c87a71b.js": "/phantom-dwellings/precache-manifest.fab0745448d7e87b6fb2a5236c87a71b.js",
+    "precache-manifest.893efde6dbb228db00a14b6b2ecd3a4c.js": "/phantom-dwellings/precache-manifest.893efde6dbb228db00a14b6b2ecd3a4c.js",
     "service-worker.js": "/phantom-dwellings/service-worker.js",
     "static/css/2.b4a16772.chunk.css.map": "/phantom-dwellings/static/css/2.b4a16772.chunk.css.map",
     "static/css/main.a9ac5b2e.chunk.css.map": "/phantom-dwellings/static/css/main.a9ac5b2e.chunk.css.map",
@@ -20,6 +20,6 @@
     "static/css/2.b4a16772.chunk.css",
     "static/js/2.1b8a4383.chunk.js",
     "static/css/main.a9ac5b2e.chunk.css",
-    "static/js/main.4362635e.chunk.js"
+    "static/js/main.f2b50622.chunk.js"
   ]
 }

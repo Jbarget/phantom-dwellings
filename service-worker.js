@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/phantom-dwellings/precache-manifest.fab0745448d7e87b6fb2a5236c87a71b.js"
+  "/phantom-dwellings/precache-manifest.893efde6dbb228db00a14b6b2ecd3a4c.js"
 );
 
 self.addEventListener('message', (event) => {
