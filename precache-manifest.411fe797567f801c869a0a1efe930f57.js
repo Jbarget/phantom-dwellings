@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "526ba550c89acd9fd9fdbb4be1e041af",
+    "revision": "324b747514c1591f24ca4e271b3e6b04",
     "url": "/phantom-dwellings/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/phantom-dwellings/static/css/2.b4a16772.chunk.css"
   },
   {
-    "revision": "84c014af3d95a08a54f2",
+    "revision": "3131d236c1ba8caa2354",
     "url": "/phantom-dwellings/static/css/main.a9ac5b2e.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/phantom-dwellings/static/js/2.1b8a4383.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "84c014af3d95a08a54f2",
-    "url": "/phantom-dwellings/static/js/main.8f40ba6e.chunk.js"
+    "revision": "3131d236c1ba8caa2354",
+    "url": "/phantom-dwellings/static/js/main.784dce42.chunk.js"
   },
   {
     "revision": "40104b5b4ed3b79a2049",
