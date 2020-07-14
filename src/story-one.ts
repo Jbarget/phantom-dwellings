@@ -1,7 +1,7 @@
 export default {
   triggerTimes: [
     2,
-    5,
+    3,
     9,
     12,
     17,
@@ -41,7 +41,7 @@ export default {
       details: {
         images: [{ src: "01.jpg", alt: "image of John Büsst" }],
         text:
-          "Known as the ‘Bingil Bay Bastard’, John Büsst was a passionate artist and conservationist who fought for the preservation of the Great Barrier Reef ecosystem and the Wet Tropics jungle. Coming from a wealthy family in Melbourne, he studied at the artists' colony of Montsalvat (Victoria), a period in which he acquired a special interest in environmental conservation. <br /><br /> In 1932, inspired by the romantic literature of E.J. Banfield moves to the island of Bedarra (part of the Family Islands group) to dedicate himself to painting the 'bright tones of the tropics.' Due to the tourist exploitation of the island, he moved to the mainland and built a house at Ninney Point (north of Mission Beach) using the materials available in the environment such as bamboo and mud bricks. He declares that 'he [was] not interested in doing anything that will not last for a thousand years' 36– a reference to the characteristic cyclones of the region, and he names it Ninney Rise. In 1967 he read a story in the local newspaper for the tender Ellison Reef for limestone exploitation (see Save the Reef Campaign) initiating what would become one of the most emblematic environmental movements in the country. <br /><br /> 'There is no such thing as a <i>dead reef</i>. The so-called <i>dead reef</i> provides the vital food and reproduction of multiple reef organisms ... The so-called <i>dead reef</i> is, in fact, the base and living heart of the reef.",
+          "Known as the ‘Bingil Bay Bastard’, John Büsst was a passionate artist and conservationist who fought for the preservation of the Great Barrier Reef ecosystem and the Wet Tropics jungle. Coming from a wealthy family in Melbourne, he studied at the artists' colony of Montsalvat (Victoria), a period in which he acquired a special interest in environmental conservation.",
       },
     },
     {
